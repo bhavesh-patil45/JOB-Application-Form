@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Application Form</h1>
+
+        <form class="application-form">
+
+            <!-- Basic Details -->
+            <label>Full Name :</label>
+            <input type="text" class="name" placeholder="Enter Your Name">
+
+            <label>Mobile No :</label>
+            <input type="number" class="mobile" placeholder="+00 0000000000">
+
+            <label>Email :</label>
+            <input type="email" class="email" placeholder="Enter Your Email">
+
+            <label>Date of Birth :</label>
+            <input type="date" class="dob">
+
+            <label>Gender :</label>
+            <select class="gender">
+                <option value="">-- Select Gender --</option>
+                <option>Male</option>
+                <option>Female</option>
+                <option>Other</option>
+            </select>
+
+            <label>Marital Status :</label>
+            <select class="maritalStatus">
+                <option value="">-- Select --</option>
+                <option>Single</option>
+                <option>Married</option>
+            </select>
+
+            <!-- Address -->
+            <label>Address :</label>
+            <input type="text" class="street" placeholder="Street / Area">
+            <input type="text" class="city" placeholder="City">
+            <input type="text" class="state" placeholder="State">
+            <input type="number" class="pincode" placeholder="Pincode">
+
+            <!-- Education -->
+            <label>Highest Qualification :</label>
+            <input type="text" class="qualification" placeholder="e.g. B.Tech, BCA, MCA">
+
+            <label>Passing Year :</label>
+            <select class="passingYear">
+                <option>-- Select --</option>
+                <option>2022</option>
+                <option>2023</option>
+                <option>2024</option>
+                <option>2025</option>
+                <option>2026</option>
+            </select>
+
+            <!-- Job Details -->
+            <label>Applying for Job Role :</label>
+            <select class="jobRole">
+                <option value="">-- Select Role --</option>
+                <option>Software Developer</option>
+                <option>Front-End Developer</option>
+                <option>Web Designer</option>
+                <option>Data Analyst</option>
+                <option>Software Tester</option>
+            </select>
+
+            <!-- Uploads -->
+            <label>Upload Photo :</label>
+            <input type="file" class="uploadpic" accept="image/*">
+
+            <label>Upload Resume :</label>
+            <input type="file" class="uploadResume">
+
+            <!-- Skills -->
+            <label>Skills :</label>
+            <div class="skills">
+                <div><input type="checkbox" value="HTML"><label>HTML</label></div>
+                <div><input type="checkbox" value="CSS"><label>CSS</label></div>
+                <div><input type="checkbox" value="JavaScript"><label>JavaScript</label></div>
+                <div><input type="checkbox" value="PHP"><label>PHP</label></div>
+                <div><input type="checkbox" value="MySQL"><label>MySQL</label></div>
+                <div><input type="checkbox" value="Java"><label>Java</label></div>
+                <div><input type="checkbox" value="React"><label>React</label></div>
+            </div>
+
+            <!-- Languages -->
+            <label>Languages Known :</label>
+            <div class="languages">
+                <div><input type="checkbox" value="English"><label>English</label></div>
+                <div><input type="checkbox" value="Hindi"><label>Hindi</label></div>
+                <div><input type="checkbox" value="Marathi"><label>Marathi</label></div>
+            </div>
+
+            <!-- Experience -->
+            <label>Work Experience :</label>
+            <textarea rows="4" class="experience" placeholder="Describe your experience"></textarea>
+
+            <label>Expected Salary (Annual) :</label>
+            <input type="number" class="expectedSalary" placeholder="e.g. 300000">
+
+            <label>Preferred Job Location :</label>
+            <select class="preferredJobLocation">
+                <option>Pune</option>
+                <option>Mumbai</option>
+                <option>Bengaluru</option>
+                <option>Hyderabad</option>
+                <option>Chennai</option>
+            </select>
+
+            <label>Emergency Contact Number :</label>
+            <input type="number" class="emergencyContact" placeholder="0000000000">
+
+            <!-- Reference -->
+            <label>Reference Name (Optional):</label>
+            <input type="text" class="referenceName" placeholder="Reference Person">
+
+            <label>Reference Contact:</label>
+            <input type="number" class="referenceContact" placeholder="0000000000">
+
+            <!-- Submit -->
+            <button class="submit" id="button" type="submit">Submit Application</button>
+
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

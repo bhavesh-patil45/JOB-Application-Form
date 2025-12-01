@@ -1,0 +1,93 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Setup */
+body {
+    display: flex;
+    justify-content: center;
+    background: #f4f4f4;
+    font-family: Arial, sans-serif;
+    padding: 20px 0;
+}
+
+/* Form Container */
+.container {
+    width: 550px;
+    background: bisque;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    box-shadow: 7px 7px 15px rgb(78, 61, 61, 0.5);
+}
+
+/* Title */
+.container h1 {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+/* Form */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+/* Labels */
+form label {
+    font-weight: bold;
+}
+
+/* Input Fields */
+form input,
+form select,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #888;
+    border-radius: 5px;
+    font-size: 0.95rem;
+}
+
+/* Textarea */
+form textarea {
+    resize: horizontal;
+}
+
+/* ---------------- CHECKBOX BLOCK FIX ---------------- */
+
+.skills,
+.languages {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    background: #ffeecb;
+    padding: 5px;
+    border-radius: 6px;
+}
+
+form button {
+    background: #7e7ef8;
+    color: white;
+    padding: 12px;
+    border: none;
+    font-size: 1rem;
+    border-radius: 6px;
+    margin-top: 10px;
+    cursor: pointer;
+    width: 250px;
+    margin-left: 130px;
+}
+
+form button:hover {
+    background: #6138f6;
+    transition-delay: 0.10s;
+}
+
+/* Checkbox + label grouped inside a small*
